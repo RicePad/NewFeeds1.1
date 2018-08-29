@@ -32,26 +32,23 @@ public class NewsfeedAdapter extends ArrayAdapter<Newsfeed> {
         // Get the {@link Newsfeed} object located at this position in the list
         Newsfeed currentNewsfeed = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID attraction_text_view.
-        TextView newsfeedTextView = (TextView) listItemView.findViewById(R.id.title_location_text_view);
+        // Find the TextView in the list_item.xml layout with the correct IDs
+        TextView newsfeedTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
         TextView newsfeedSectionTextView = (TextView) listItemView.findViewById(R.id.newsfeed_section_text_view);
-        TextView newsfeedDateTextView = (TextView) listItemView.findViewById(R.id.newsfeed_date);
 
-
-
-        // Get the NewsfeedTitle from the currentNewsfeed object and set this text on
+        // Get the NewsfeedTitle and section from the currentNewsfeed object and set this text on
         // the TextView.
         newsfeedTextView.setText(currentNewsfeed.getNewsfeedTitle());
         newsfeedSectionTextView.setText(currentNewsfeed.getSection());
 
-        // Create a new Date object from the time in milliseconds of the earthquake
+        // Create a new Date object for newsfeed
         Date dateObject = new Date(currentNewsfeed.getDateTime());
 
         // Find the TextView with view ID date
         TextView dateView = (TextView) listItemView.findViewById(R.id.newsfeed_date);
         // Format the date string (i.e. "Mar 3, 1984")
         String formattedDate = formatDate(dateObject);
-        // Display the date of the current earthquake in that TextView
+        // Display the date of the current newsfeed in that TextView
         dateView.setText(formattedDate);
 
 

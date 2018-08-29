@@ -15,11 +15,20 @@
         <item name="android:background">#009688</item>
     </style>
 
+    <style name="paddingLayout">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+
+    </style>
+
     <style name="textViewSection">
         <item name="android:textSize">14sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+
 
 
 
