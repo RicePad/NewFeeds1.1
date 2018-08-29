@@ -15,5 +15,12 @@
         <item name="android:background">#009688</item>
     </style>
 
+    <style name="textViewSection">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
 
 </resources>

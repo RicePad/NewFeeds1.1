@@ -30,20 +30,17 @@
                 tools:text="Long placeholder location that should wrap to more than 2 lines of text"
                 android:fontFamily="serif"/>
             <TextView
+                style="@style/textViewSection"
                 android:id="@+id/newsfeed_date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="13dp"
-                android:textSize="14sp"
+                android:layout_marginBottom="5dp"
                 android:textStyle="bold"
                 tools:text="19/19/19"
-                android:textColor="@color/dateColorAccent"/>
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"/>
             <TextView
+                style="@style/textViewSection"
                 android:id="@+id/newsfeed_section_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="newsfeed section"
                 android:textColor="@color/colorPrimaryDark"
